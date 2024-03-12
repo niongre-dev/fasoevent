@@ -10,4 +10,12 @@ class AuthController extends Controller
     public function inscriptionOption() {
         return view('public.auth.inscription-option');
     }
+
+    public function inscriptionPromoteur() {
+        return view('public.auth.inscription-promoteur');
+    }
+    
+    public function inscriptionAbonné() {
+        return view('public.auth.inscription-abonné');
+    }
 }

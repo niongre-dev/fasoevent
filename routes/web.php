@@ -27,3 +27,5 @@ Route::get('/abonne-tableau-de-bord', [AbonneController::class, 'abonneTableaude
 Route::get('/promoteur-tableau-de-bord', [PromoteurController::class, 'promoteurTableaudebord'])->name('private.promoteurTableaudebord');
 #Auth routes
 Route::get('/inscription-option', [AuthController::class, 'inscriptionOption'])->name('public.inscription-option');
+Route::get('/inscription-promoteur', [AuthController::class, 'inscriptionPromoteur'])->name('public.inscription-promoteur');
+Route::get('/inscription-abonné', [AuthController::class, 'inscriptionAbonné'])->name('public.inscription-abonné');
