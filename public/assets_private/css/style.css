@@ -8613,7 +8613,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #4d83ff;
+  --bs-primary: #008689;
   --bs-secondary: #686868;
   --bs-success: #71c016;
   --bs-info: #7859df;
@@ -11431,8 +11431,8 @@ fieldset:disabled .btn {
 
 .btn-primary {
   color: #000;
-  background-color: #4d83ff;
-  border-color: #4d83ff;
+  background-color: #008689;
+  border-color: #008689;
 }
 
 .btn-primary:hover {
@@ -11464,8 +11464,8 @@ fieldset:disabled .btn {
 
 .btn-primary:disabled, .btn-primary.disabled {
   color: #000;
-  background-color: #4d83ff;
-  border-color: #4d83ff;
+  background-color: #008689;
+  border-color: #008689;
 }
 
 .btn-secondary {
@@ -11742,14 +11742,14 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-primary {
-  color: #4d83ff;
-  border-color: #4d83ff;
+  color: #008689;
+  border-color: #008689;
 }
 
 .btn-outline-primary:hover {
   color: #000;
-  background-color: #4d83ff;
-  border-color: #4d83ff;
+  background-color: #008689;
+  border-color: #008689;
 }
 
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
@@ -11759,8 +11759,8 @@ fieldset:disabled .btn {
 .btn-check:checked + .btn-outline-primary,
 .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
   color: #000;
-  background-color: #4d83ff;
-  border-color: #4d83ff;
+  background-color: #008689;
+  border-color: #008689;
 }
 
 .btn-check:checked + .btn-outline-primary:focus,
@@ -11769,7 +11769,7 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-primary:disabled, .btn-outline-primary.disabled {
-  color: #4d83ff;
+  color: #008689;
   background-color: transparent;
 }
 
@@ -15160,7 +15160,7 @@ fieldset:disabled .btn {
 }
 
 .link-primary {
-  color: #4d83ff;
+  color: #008689;
 }
 
 .link-primary:hover, .link-primary:focus {
@@ -15621,7 +15621,7 @@ fieldset:disabled .btn {
 }
 
 .border-primary {
-  border-color: #4d83ff !important;
+  border-color: #008689 !important;
 }
 
 .border-secondary {
@@ -19661,11 +19661,11 @@ address p {
 }
 
 .blockquote-primary {
-  border-color: #4d83ff;
+  border-color: #008689;
 }
 
 .blockquote-primary .blockquote-footer {
-  color: #4d83ff;
+  color: #008689;
 }
 
 .blockquote-secondary {
@@ -19835,7 +19835,7 @@ code {
 }
 
 .footer a {
-  color: #4d83ff;
+  color: #008689;
   font-size: inherit;
 }
 
@@ -20292,7 +20292,7 @@ code {
 .nav-tabs .nav-item .nav-link.active {
   border: 0;
   border-bottom: 3px solid #5646ff;
-  color: #4d83ff;
+  color: #008689;
 }
 
 #proBanner {
@@ -20770,13 +20770,13 @@ code {
 }
 
 .btn-inverse-primary:not(.btn-inverse-light) {
-  color: #4d83ff;
+  color: #008689;
 }
 
 .btn-inverse-primary:hover {
   color: #ffffff;
-  background-color: #4d83ff;
-  border-color: #4d83ff;
+  background-color: #008689;
+  border-color: #008689;
 }
 
 .btn-inverse-primary.focus, .btn-inverse-primary:focus {
@@ -20784,15 +20784,15 @@ code {
 }
 
 .btn-inverse-primary.disabled, .btn-inverse-primary:disabled {
-  color: #4d83ff;
+  color: #008689;
   background-color: transparent;
 }
 
 .btn-inverse-primary.active, .btn-inverse-primary:active,
 .show > .btn-inverse-primary.dropdown-toggle {
   color: #ffffff;
-  background-color: #4d83ff;
-  border-color: #4d83ff;
+  background-color: #008689;
+  border-color: #008689;
 }
 
 .btn-primary, .btn-primary:hover {
@@ -21066,8 +21066,8 @@ code {
 
 /*Badge outlined variations*/
 .badge-outline-primary {
-  color: #4d83ff;
-  border: 1px solid #4d83ff;
+  color: #008689;
+  border: 1px solid #008689;
 }
 
 .badge-outline-secondary {
@@ -21240,8 +21240,8 @@ code {
 
 .card-inverse-primary {
   background: rgba(77, 131, 255, 0.2);
-  border: 1px solid theme-color-level(#4d83ff, 1);
-  color: theme-color-level(#4d83ff, 3);
+  border: 1px solid theme-color-level(#008689, 1);
+  color: theme-color-level(#008689, 3);
 }
 
 .card-inverse-secondary {
@@ -21341,7 +21341,7 @@ code {
   width: 18px;
   height: 18px;
   border-radius: 2px;
-  border: solid #4d83ff;
+  border: solid #008689;
   border-width: 2px;
   -webkit-transition: all;
   -moz-transition: all;
@@ -21376,7 +21376,7 @@ code {
 }
 
 .form-check .form-check-label input[type="checkbox"]:checked + .input-helper:before {
-  background: #4d83ff;
+  background: #008689;
   border-width: 0;
 }
 
@@ -21405,7 +21405,7 @@ code {
   content: "";
   top: 0;
   left: 0;
-  border: solid #4d83ff;
+  border: solid #008689;
   border-width: 2px;
   width: 20px;
   height: 20px;
@@ -21454,7 +21454,7 @@ code {
 }
 
 .form-check .form-check-label input[type="radio"]:checked + .input-helper:before {
-  background: #4d83ff;
+  background: #008689;
   border-width: 0;
 }
 
@@ -21487,7 +21487,7 @@ code {
 
 .form-check-primary.form-check label input[type="checkbox"]:checked + .input-helper:before,
 .form-check-primary.form-check label input[type="radio"]:checked + .input-helper:before {
-  background: #4d83ff;
+  background: #008689;
 }
 
 .form-check-secondary.form-check label input[type="checkbox"] + .input-helper:before,
@@ -21631,11 +21631,11 @@ select.form-control:focus, .dataTables_wrapper select:focus {
 }
 
 select.form-control.border-primary, .dataTables_wrapper select.border-primary {
-  outline: 1px solid #4d83ff;
+  outline: 1px solid #008689;
 }
 
 select.form-control.border-primary:focus, .dataTables_wrapper select.border-primary:focus {
-  outline: 1px solid #4d83ff;
+  outline: 1px solid #008689;
 }
 
 select.form-control.border-secondary, .dataTables_wrapper select.border-secondary {
@@ -21738,7 +21738,7 @@ select.form-control.border-dark:focus, .dataTables_wrapper select.border-dark:fo
   font-size: 20px;
   width: 40px;
   text-align: left;
-  color: #4d83ff;
+  color: #008689;
 }
 
 .icon-in-bg {
@@ -21772,7 +21772,7 @@ select.form-control.border-dark:focus, .dataTables_wrapper select.border-dark:fo
   border-radius: 5px;
   line-height: 2.812rem;
   text-align: center;
-  background: #4d83ff;
+  background: #008689;
 }
 
 .icon-box-primary i {
@@ -22041,7 +22041,7 @@ dl li {
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  background: #4d83ff;
+  background: #008689;
   z-index: 1;
 }
 
@@ -22075,7 +22075,7 @@ dl li {
   height: 15px;
   left: -30px;
   top: 0;
-  border: 4px solid #4d83ff;
+  border: 4px solid #008689;
   margin-right: 15px;
   z-index: 2;
   background: color(white);
@@ -22549,7 +22549,7 @@ dl li {
 .sidebar .nav .nav-item.active > .nav-link i,
 .sidebar .nav .nav-item.active > .nav-link .menu-title,
 .sidebar .nav .nav-item.active > .nav-link .menu-arrow {
-  color: #4d83ff;
+  color: #008689;
 }
 
 .sidebar .nav:not(.sub-menu) {
@@ -22567,7 +22567,7 @@ dl li {
 
 .sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link {
   background: transparent;
-  color: #4d83ff;
+  color: #008689;
 }
 
 .sidebar .nav.sub-menu {
