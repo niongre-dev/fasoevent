@@ -52,7 +52,7 @@
                 <div class="input-group">
                   <div class="input-group-prepend bg-transparent">
                     <span class="input-group-text bg-transparent border-right-0">
-                      <i class="mdi mdi-lock-outline text-primary"></i>
+                      <i class="mdi mdi-home-modern text-primary"></i>
                     </span>
                   </div>
                   <input type="text" class="form-control form-control-lg border-left-0" id="exampleInputAddresse" placeholder="Entrez votre adresse">                        
@@ -63,7 +63,7 @@
                 <div class="input-group">
                   <div class="input-group-prepend bg-transparent">
                     <span class="input-group-text bg-transparent border-right-0">
-                      <i class="mdi mdi-lock-outline text-primary"></i>
+                      <i class="mdi mdi-city text-primary"></i>
                     </span>
                   </div>
                   <input type="text" class="form-control form-control-lg border-left-0" id="exampleInputSiège" placeholder="Entrez votre siège">                        
@@ -74,10 +74,10 @@
                 <div class="input-group">
                   <div class="input-group-prepend bg-transparent">
                     <span class="input-group-text bg-transparent border-right-0">
-                      <i class="mdi mdi-lock-outline text-primary"></i>
+                      <i class="mdi mdi-phone text-primary"></i>
                     </span>
                   </div>
-                  <input type="number" class="form-control form-control-lg border-left-0" id="exampleInputTéléphone" placeholder="Entrez votre téléphone">                        
+                  <input type="text" class="form-control form-control-lg border-left-0" id="exampleInputTéléphone" placeholder="Entrez votre téléphone">                        
                 </div>
             </div>
             <div class="form-group">
@@ -85,7 +85,7 @@
                 <div class="input-group">
                   <div class="input-group-prepend bg-transparent">
                     <span class="input-group-text bg-transparent border-right-0">
-                      <i class="mdi mdi-lock-outline text-primary"></i>
+                      <i class="mdi mdi-domain text-primary"></i>
                     </span>
                   </div>
                   <textarea name="" class="form-control form-control-lg border-left-0" id="" cols="30" rows="10" placeholder="Entrez vos domaines d'activités"></textarea>
@@ -95,18 +95,16 @@
               <div class="form-check">
                 <label class="form-check-label text-muted">
                   <input type="checkbox" class="form-check-input">
-                  I agree to all Terms & Conditions
+                  J'accepte les Conditions mentionnées ci-dessus !
                 </label>
               </div>
             </div>
             <div class="mt-3">
-              <a class="btn btn-block btn-primary w-100 text-white btn-lg font-weight-medium auth-form-btn" href="../../index.html">SIGN UP</a>
+              <a class="btn btn-block btn-primary w-100 text-white btn-lg font-weight-medium auth-form-btn" href="../../index.html">S'inscrire</a>
             </div>
+            
             <div class="text-center mt-4 font-weight-light">
-              S'inscrire en tant que promoteur.<a href="{{ route('public.inscription-promoteur') }}" class="text-primary">Aller</a>
-            </div>
-            <div class="text-center mt-4 font-weight-light">
-              Avez-vous déjà un compte ? <a href="login.html" class="text-primary">Se connecter</a>
+              Avez-vous déjà un compte ? <a href="{{ route('public.connexion') }}" class="text-primary">Se connecter</a>
             </div>
           </form>
         </div>

@@ -11,16 +11,16 @@
           <img src="{{ asset('assets_private/images/logo.svg') }}" alt="logo">
         </div>
         <h4>Options d'inscription</h4>
-        <h6 class="font-weight-light">JVeuillez choisir une option d'inscription</h6>
+        <h6 class="font-weight-light">Veuillez choisir une option d'inscription</h6>
         <form class="pt-3">
           <div class="mt-3">
-            <a class="btn btn-block btn-primary w-100 text-white btn-lg font-weight-medium auth-form-btn" href="{{ route(url('public.inscription-promoteur')) }}">Inscription promoteur</a>
+            <a class="btn btn-block btn-primary w-100 text-white btn-lg font-weight-medium auth-form-btn" href="{{ route('public.inscription-promoteur') }}">Inscription promoteur</a>
           </div>
           <div class="mt-3">
-            <a class="btn btn-block btn-primary w-100 text-white btn-lg font-weight-medium auth-form-btn" href="{{ route(url('public.inscription-abonné')) }}">Inscription abonné</a>
+            <a class="btn btn-block btn-primary w-100 text-white btn-lg font-weight-medium auth-form-btn" href="{{ route('public.inscription-abonné') }}">Inscription abonné</a>
           </div>
           <div class="mt-3">
-            <a class="btn btn-block btn-primary w-100 text-white btn-lg font-weight-medium auth-form-btn" href="{{ route(url('public.inscription-promoteur')) }}">Connection</a>
+            <a class="btn btn-block btn-primary w-100 text-white btn-lg font-weight-medium auth-form-btn" href="{{ route('public.connexion') }}">Connexion</a>
           </div>
         </form>
       </div>

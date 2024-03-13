@@ -29,3 +29,4 @@ Route::get('/promoteur-tableau-de-bord', [PromoteurController::class, 'promoteur
 Route::get('/inscription-option', [AuthController::class, 'inscriptionOption'])->name('public.inscription-option');
 Route::get('/inscription-promoteur', [AuthController::class, 'inscriptionPromoteur'])->name('public.inscription-promoteur');
 Route::get('/inscription-abonné', [AuthController::class, 'inscriptionAbonné'])->name('public.inscription-abonné');
+Route::get('/connexion', [AuthController::class, 'connexion'])->name('public.connexion');
