@@ -224,7 +224,7 @@
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- 2eme navbar -->
-        @if (!request()->routeIs('public.inscription-option') && !request()->routeIs('public.inscription-promoteur') || !request()->routeIs('public.inscription-abonné') && !request()->routeIs('public.connexion'))
+        @if (!request()->routeIs('public.inscription-option') && !request()->routeIs('public.inscription-promoteur') && !request()->routeIs('public.inscription-abonné') && !request()->routeIs('public.connexion'))
           @include('private._layouts.sidebar')
         @endif
      

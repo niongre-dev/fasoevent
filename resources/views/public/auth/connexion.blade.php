@@ -8,7 +8,9 @@
       <div class="col-lg-6 d-flex align-items-center justify-content-center">
         <div class="auth-form-transparent text-left p-3">
           <div class="brand-logo">
-            <img src="{{ asset('assets_private/images/logo.svg') }}" alt="logo">
+              <a href= "{{ route('acceuil') }}">
+                <img src="{{ asset('assets_private/images/logo.svg') }}" alt="logo">
+              </a>
           </div>
           <h4>Connexion !!!</h4>
           <h6 class="font-weight-light">Veuillez entrer vos coordonnées pour vous connecter</h6>
