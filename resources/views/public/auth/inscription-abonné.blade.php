@@ -103,7 +103,9 @@
             <div class="mt-3">
               <a class="btn btn-block btn-primary w-100 text-white btn-lg font-weight-medium auth-form-btn" href="../../index.html">S'inscrire</a>
             </div>
-            
+            <div class="text-center mt-4 font-weight-light">
+              S'inscrire en tant que promoteur. <a href="{{ route('public.inscription-promoteur') }}" class="text-primary">Allez !</a>
+            </div>
             <div class="text-center mt-4 font-weight-light">
               Avez-vous déjà un compte ? <a href="{{ route('public.connexion') }}" class="text-primary">Se connecter</a>
             </div>
