@@ -7,6 +7,11 @@
     <div class="row flex-grow">
       <div class="col-lg-6 d-flex align-items-center justify-content-center">
         <div class="auth-form-transparent text-left p-3">
+        @if(session('success'))
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{ session('success') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        @endif
           <div class="brand-logo">
               <a href= "{{ route('acceuil') }}">
                 <img src="{{ asset('assets_private/images/logo.svg') }}" alt="logo">
