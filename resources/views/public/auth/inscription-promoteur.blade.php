@@ -25,8 +25,8 @@
                   </span>
                 </div>
                 <input type="text" name="nomComplet" class="form-control form-control-lg border-left-0" placeholder="Entrez votre  nom complet">
-                @if ($error->has('nomComplet'))
-                  <span class="text-danger">{{ $error->first('nomComplet') }}</span>
+                @if ($errors->has('nomComplet'))
+                  <span class="text-danger">{{ $errors->first('nomComplet') }}</span>
                 @endif
               </div>
             </div>
@@ -39,8 +39,8 @@
                   </span>
                 </div>
                 <input type="email" name="email" class="form-control form-control-lg border-left-0" placeholder="Entrez votre email">
-                @if ($error->has('email'))
-                  <span class="text-danger">{{ $error->first('email') }}</span>
+                @if ($errors->has('email'))
+                  <span class="text-danger">{{ $errors->first('email') }}</span>
                 @endif
               </div>
             </div>
@@ -54,8 +54,8 @@
                   </span>
                 </div>
                 <input type="password" name="password" class="form-control form-control-lg border-left-0" id="exampleInputPassword" placeholder="Entrez votre mot de passe">
-                @if ($error->has('password'))
-                  <span class="text-danger">{{ $error->first('password') }}</span>
+                @if ($errors->has('password'))
+                  <span class="text-danger">{{ $errors->first('password') }}</span>
                 @endif                        
               </div>
             </div>
@@ -68,8 +68,8 @@
                     </span>
                   </div>
                   <input type="text" name="adresse" class="form-control form-control-lg border-left-0" id="exampleInputAddresse" placeholder="Entrez votre adresse">
-                  @if ($error->has('adresse'))
-                  <span class="text-danger">{{ $error->first('adresse') }}</span>
+                  @if ($errors->has('adresse'))
+                  <span class="text-danger">{{ $errors->first('adresse') }}</span>
                 @endif                        
                 </div>
             </div>
@@ -82,8 +82,8 @@
                     </span>
                   </div>
                   <input type="text" name="siege" class="form-control form-control-lg border-left-0" id="exampleInputSiège" placeholder="Entrez votre siège"> 
-                  @if ($error->has('siege'))
-                  <span class="text-danger">{{ $error->first('siege') }}</span>
+                  @if ($errors->has('siege'))
+                  <span class="text-danger">{{ $errors->first('siege') }}</span>
                 @endif                       
                 </div>
             </div>
@@ -96,8 +96,8 @@
                     </span>
                   </div>
                   <input type="text" name="telephone" class="form-control form-control-lg border-left-0" id="exampleInputTéléphone" placeholder="Entrez votre téléphone">  
-                  @if ($error->has('telephone'))
-                  <span class="text-danger">{{ $error->first('telephone') }}</span>
+                  @if ($errors->has('telephone'))
+                  <span class="text-danger">{{ $errors->first('telephone') }}</span>
                 @endif                      
                 </div>
             </div>
@@ -110,8 +110,8 @@
                     </span>
                   </div>
                   <textarea name="activites" class="form-control form-control-lg border-left-0" id="" cols="30" rows="10" placeholder="Entrez vos domaines d'activités"></textarea>
-                  @if ($error->has('activites'))
-                  <span class="text-danger">{{ $error->first('activites') }}</span>
+                  @if ($errors->has('activites'))
+                  <span class="text-danger">{{ $errors->first('activites') }}</span>
                 @endif
                 </div>
             </div>

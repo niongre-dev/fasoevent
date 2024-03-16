@@ -30,4 +30,5 @@ Route::get('/inscription-option', [AuthController::class, 'inscriptionOption'])-
 Route::get('/inscription-promoteur', [AuthController::class, 'inscriptionPromoteur'])->name('public.inscription-promoteur');
 Route::post('/inscription-promoteur-action', [AuthController::class, 'inscriptionPromoteurAction'])->name('public.inscription-promoteur-action');
 Route::get('/inscription-abonné', [AuthController::class, 'inscriptionAbonné'])->name('public.inscription-abonné');
+Route::post('/inscription-abonné-action', [AuthController::class, 'inscriptionAbonnéAction'])->name('public.inscription-abonné-action');
 Route::get('/connexion', [AuthController::class, 'connexion'])->name('public.connexion');
