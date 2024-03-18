@@ -19,7 +19,15 @@
           </div>
           <h4>Connexion !!!</h4>
           <h6 class="font-weight-light">Veuillez entrer vos coordonnées pour vous connecter</h6>
-          <form class="pt-3">
+
+          @if($errors->has('login'))
+            <div class="alert alert-danger form-login">
+              {{ $errors->first('login') }}
+            </div>
+          @endif
+          
+          <form action="{{ route('public.connexion-action') }}" method="POST" class="pt-3">
+            @csrf
             <div class="form-group">
               <label for="exampleInputEmail">Email</label>
               <div class="input-group">
@@ -28,7 +36,10 @@
                     <i class="mdi mdi-account-outline text-primary"></i>
                   </span>
                 </div>
-                <input type="text" class="form-control form-control-lg border-left-0" id="exampleInputEmail" placeholder="Entrez votre émail">
+                <input type="text" name="email" class="form-control form-control-lg border-left-0" id="exampleInputEmail" placeholder="Entrez votre émail">
+                @if ($errors->has('email'))
+                  <span class="text-danger">{{ $errors->first('email') }}</span>
+                @endif
               </div>
             </div>
             <div class="form-group">
@@ -39,12 +50,15 @@
                     <i class="mdi mdi-lock-outline text-primary"></i>
                   </span>
                 </div>
-                <input type="password" class="form-control form-control-lg border-left-0" id="exampleInputPassword" placeholder="Entrez votre mot de passe">                        
+                <input type="password" name="password" class="form-control form-control-lg border-left-0" id="exampleInputPassword" placeholder="Entrez votre mot de passe">  
+                @if ($errors->has('password'))
+                  <span class="text-danger">{{ $errors->first('password') }}</span>
+                @endif                      
               </div>
             </div>
             
             <div class="my-3">
-              <a class="btn btn-block btn-primary w-100 text-white btn-lg font-weight-medium auth-form-btn" href="../../index.html">Se connecter</a>
+              <button class="btn btn-block btn-primary w-100 text-white btn-lg font-weight-medium auth-form-btn" type="submit">Se connecter</button>
             </div>
             
             <div class="text-center mt-4 font-weight-light">
