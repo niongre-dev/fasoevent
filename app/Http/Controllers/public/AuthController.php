@@ -182,4 +182,14 @@ class AuthController extends Controller
             return redirect()->route($redirectRoute)->withMessage("Connexion réussie !");
         }
     }
+
+    # fonction de deconnexion
+    public function deconnexion(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect()->route('acceuil')
+            ->withSuccess('Vous avez été deconnecté avec succès');
+    }
 }

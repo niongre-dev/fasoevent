@@ -63,11 +63,30 @@
         </div>
 
         <div class="cta d-none d-md-flex align-items-center gap-2">
-          <a href="{{ route('public.connexion') }}" class="scrollto">Connexion</a>
-          <a href="{{ route('public.inscription-option') }}" class="scrollto">Inscription</a>
-          <a href="{{route('private.adminTableaudebord')}}" class="scrollto">Mon compte Admin</a>
-          <a href="{{route('private.abonneTableaudebord')}}" class="scrollto">Mon compte Abonné</a>
+          @auth
+          @if (auth()->user()->role == 'admin')
+          <a href="{{route('private.adminTableaudebord')}}" class="scrollto">Mon compte Admin</a>  
+          @endif
+
+          @if (auth()->user()->role == 'promoteur')
           <a href="{{route('private.promoteurTableaudebord')}}" class="scrollto">Mon compte Promoteur</a>
+          @endif
+
+          @if (auth()->user()->role == 'abonne')
+          <a href="{{route('private.abonneTableaudebord')}}" class="scrollto">Mon compte Abonné</a>
+          @endif
+          <a class="scrollto" style="cursor: pointer" onclick="event.preventDefault():document.getElementById('logout-form').submit():">
+            Se déconnecter
+          </a>
+
+          <form id='logout-form' action="{{ route('deconnexion') }}" method="POST">
+            @csrf
+          </form>
+          @else
+          <a href="{{ route('public.inscription-option') }}" class="scrollto">Inscription</a>
+          <a href="{{ route('public.connexion') }}" class="scrollto">Connexion</a>
+          @endauth
+          
         </div>
       </div>
     </section>
